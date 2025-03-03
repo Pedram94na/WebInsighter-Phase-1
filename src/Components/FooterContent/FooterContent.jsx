@@ -15,6 +15,29 @@ export default function FooterContent()
                         <img className="footer_logo" src="/LogoDark.png" style={{width: '150px'}}/>
                     </Box>
                 </Grid>
+
+                <Grid item size={{xs:12, md: 4}} justifyItems={{xs:'center'}}>
+                    <Box>
+                    <ul className='footer_social-media__ul'>
+                        <li>
+                            <a href='https://www.instagram.com/web_insighter?igsh=MTUxdGR1b3EzMjloYg%3D%3D&utm_source=qr'>
+                                <Instagram/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href='https://www.linkedin.com/company/webinsighter/'>
+                                <LinkedIn/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href='http=facebook.com'>
+                                <FacebookRounded/>
+                            </a>
+                        </li>
+                       </ul>
+                    </Box>
+                </Grid>
+                
                 <Grid item size={{xs:6, md: 4}}>
                     <Box>
                        <ul className='footer_contacts__ul'>
@@ -30,27 +53,6 @@ export default function FooterContent()
                             info@webinsighter.com
                             </span>
                             </li>
-                       </ul>
-                    </Box>
-                </Grid>
-                <Grid item size={{xs:12, md: 4}} justifyItems={{xs:'center'}}>
-                    <Box>
-                    <ul className='footer_social-media__ul'>
-                        <li>
-                            <a href='http://instagram.com'>
-                                <Instagram/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='https://linkedin.com'>
-                                <LinkedIn/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='http=facebook.com'>
-                                <FacebookRounded/>
-                            </a>
-                        </li>
                        </ul>
                     </Box>
                 </Grid>
