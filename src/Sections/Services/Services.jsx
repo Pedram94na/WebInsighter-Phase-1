@@ -4,7 +4,7 @@ import { Part } from '../../Components'
 
 export default function Services() {
   return (
-    <Part title="Our services"
+    <Part id="service-part" title="Services"
      className="services"
       data=" In today’s digital world, having a website isn’t enough. You need a high-performance, user-friendly website that ranks on Google and turns visitors into paying customers. That’s exactly what we deliver.
 "

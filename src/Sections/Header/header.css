@@ -12,10 +12,31 @@ header{
    color: #ffffff;
 }
 
+.header_text h2 {
+    font-size: 30px;
+}
+
+.header_text p {
+    font-size: 20px;
+}
+
 @media screen and (max-width: 899px)
 {
     header{
         height: auto;
+    }
+
+    .header_text h2 {
+        margin-top: 150px;
+        font-size: 20px;
+    }
+    
+    .header_text p {
+        font-size: 15px;
+    }
+
+    .header_button__back {
+        width: 60%;
     }
 }
 

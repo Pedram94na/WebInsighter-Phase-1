@@ -1,12 +1,13 @@
-import React from 'react'
-import './contact-us.css'
+import React, { useRef } from 'react';
+import './contact-us.css';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
-import { TextField, Button, Grid2 as Grid, TextareaAutosize, Box} from '@mui/material';
-import {default as validationSchema} from './Validation_yup';
-import {default as HandleSubmit} from './HandleSubmit'
-import { BorderAllRounded } from '@mui/icons-material';
+import { TextField, Button, Grid, Box } from '@mui/material';
+import validationSchema from './Validation_yup';
+import HandleSubmit from './HandleSubmit';
 
 const ContactUs = () => {
+  const formRef = useRef(); // Ref for the form
+
   return (
     <Formik
       initialValues={{
@@ -16,71 +17,43 @@ const ContactUs = () => {
         companyName: '',
         websiteUrl: '',
         content: '',
-        gdpr: false}}
+        gdpr: false
+      }}
       validationSchema={validationSchema}
-      onSubmit={HandleSubmit}
+      onSubmit={(values, actions) => HandleSubmit(values, actions)}
     >
       {({ isSubmitting }) => (
-         <Form className='contact-form_form'>
-            <Grid container spacing={2}>
-              <Grid size={{ xs: 12, md: 6}}>
-                <Field
-                  as={TextField}
-                  fullWidth name="firstName"
-                  placeholder="First Name"
-                  helperText={<ErrorMessage name="firstName"/>}
-                  className="radius_md"
-                  />
-              </Grid>
-              <Grid size={{ xs: 12, md: 6}}>
-              <Field
-                as={TextField}
-                fullWidth name="lastName"
-                placeholder="Last Name"
-                helperText={<ErrorMessage name="lastName"/>}/>
-              </Grid>
-              <Grid size={{ xs: 12, md: 6}}>
-                <Field
-                  as={TextField}
-                  fullWidth name="email"
-                  type="email"
-                  placeholder="Email"
-                  helperText={<ErrorMessage name="email"/>}/>
-              </Grid>
-              <Grid size={{ xs: 12, md: 6}}>
-                <Field
-                  as={TextField}
-                  fullWidth name="companyName"
-                  placeholder="Company Name"/>
-              </Grid>
-              <Grid size={{ xs: 12, md: 6}}>
-                <Field
-                  as={TextField}
-                  fullWidth name="websiteUrl"
-                  placeholder="Website URL" />
-              </Grid>
-              <Grid size={{ xs: 12}}>
-                <Field
-                  as={TextField}
-                  fullWidth name="content"
-                  placeholder="Message Content"
-                  rows={4}
-                  helperText={<ErrorMessage name="content"/>}/>
-              </Grid>
+        <Form id='contact-us-part' ref={formRef} className='contact-form_form'>
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={6}>
+              <Field as={TextField} fullWidth name="firstName" placeholder="First Name" helperText={<ErrorMessage name="firstName" />} />
             </Grid>
-         <label>
-           <Field
-           type="checkbox"
-           name="gdpr"
-           helperText={<ErrorMessage name="gdpr"/>}/>
-           Agree to GDPR terms
-         </label>
-         <Box>
-         <Button type="submit" disabled={isSubmitting} variant='outlined'>
-           Submit
-         </Button>
-         </Box>
-       </Form>
+            <Grid item xs={12} md={6}>
+              <Field as={TextField} fullWidth name="lastName" placeholder="Last Name" helperText={<ErrorMessage name="lastName" />} />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Field as={TextField} fullWidth name="email" type="email" placeholder="Email" helperText={<ErrorMessage name="email" />} />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Field as={TextField} fullWidth name="companyName" placeholder="Company Name" />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Field as={TextField} fullWidth name="websiteUrl" placeholder="Website URL" />
+            </Grid>
+            <Grid item xs={12}>
+              <Field as={TextField} fullWidth name="content" placeholder="Message Content" multiline rows={4} helperText={<ErrorMessage name="content" />} />
+            </Grid>
+          </Grid>
+          <label>
+            <Field type="checkbox" name="gdpr" />
+            Agree to GDPR terms
+          </label>
+          <Box mt={2}>
+            <Button type="submit" disabled={isSubmitting} variant='outlined'>
+              Submit
+            </Button>
+          </Box>
+        </Form>
       )}
     </Formik>
   );

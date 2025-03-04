@@ -1,29 +1,29 @@
-const handleSubmit = async (values, { setSubmitting, setErrors }) => {
-    try {
-      const response = await fetch('./api/contact_form/submit', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          ...values,
-          createdOn: new Date().toISOString()
-        })
-      });
+import emailjs from '@emailjs/browser';
 
-      if (!response.ok) {
-        const errorData = await response.json();
-        setErrors(errorData.errors);
-        throw new Error('Form submission failed');
+const HandleSubmit = (values, { setSubmitting, resetForm }) => {
+  setSubmitting(true);
+
+  emailjs
+    .send(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      values,
+      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+    )
+    .then(
+      () => {
+        console.log('SUCCESS!');
+        alert('Message sent successfully!');
+        resetForm();
+      },
+      (error) => {
+        console.log('FAILED...', error.text);
+        alert('Failed to send message. Please try again later.');
       }
-
-      const responseData = await response.json();
-      console.log('Form submitted successfully:', responseData);
-    } catch (error) {
-      console.error('Submission error:', error);
-    } finally {
+    )
+    .finally(() => {
       setSubmitting(false);
-    }
-  };
+    });
+};
 
-  export default handleSubmit
+export default HandleSubmit;

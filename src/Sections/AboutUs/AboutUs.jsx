@@ -4,7 +4,7 @@ import './about-us.css'
 
 export default function AboutUs() {
   return (
-    <Part title='About us'
+    <Part title='About Us'
     id='about-us'
     data=''
     color='#A3C52F'

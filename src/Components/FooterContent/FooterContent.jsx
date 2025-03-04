@@ -57,6 +57,10 @@ export default function FooterContent()
                     </Box>
                 </Grid>
             </Grid>
+
+            <Grid>
+                <p className='all_rights'>© 2025 WebInsighter. All rights reserved.</p>
+            </Grid>
         </div>
     )
 }

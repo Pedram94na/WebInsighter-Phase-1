@@ -16,15 +16,30 @@
 .section_description
 {
     margin-left: 80px;
+    font-size: 25px;
 }
 
 .section_title
 {
     margin-bottom: 0;
-    padding-bottom: 5px;;
+    padding-bottom: 5px;
+    font-size: 30px;
 }
 
 .section_title, .separator
 {
     margin-left: 75px;
+}
+
+.separator {
+    margin-left: 80px;
+    padding: 0 40px 0 30px;
+    width: 100%;
+}
+
+@media screen and (max-width: 899px)
+{
+    .section_description {
+        font-size: 10px;
+    }
 }

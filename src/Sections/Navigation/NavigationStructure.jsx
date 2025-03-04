@@ -1,18 +1,20 @@
 import React from 'react';
-import { Grid2 as Grid, Box } from '@mui/material';
+import { Grid, Box } from '@mui/material';
 
 export default function NavigationStructure(props) {
   return (
     <nav>
-      <Grid container spacing={4}>
-        <Grid item size={{xs : 6}} justifyItems={{xs:'start'}}>
-            <div className='top-logo'>{props.left}</div>
+      <Grid container alignItems="center" justifyContent="space-between">
+        {/* Left Section (Logo) */}
+        <Grid item xs={4} sm={3}>
+          <div className='top-logo'>{props.left}</div>
         </Grid>
-        <Grid item size={{xs : 6 , lg: 4}} justifyItems={{xs:'end'}}>
+
+        {/* Center Section (Navigation Items) */}
+        <Grid item xs={8} sm={6} lg={5} container justifyContent="center">
           {props.center}
         </Grid>
       </Grid>
     </nav>
   );
 }
-

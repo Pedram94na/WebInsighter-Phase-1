@@ -1,3 +1,9 @@
+nav {
+    background-color: rgba(28, 34, 42, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
 nav div.top-logo
 {
     padding-left: 90px;

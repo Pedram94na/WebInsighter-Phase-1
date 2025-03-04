@@ -21,7 +21,9 @@
     list-style-type: none;
     position: relative;
     font-weight: bold;
+    font-size: 20px;
     padding: 10px 0;
+    margin: 10px 0;
 
 }
 
@@ -36,11 +38,13 @@
 
 @media screen and (min-width: 800px)
 {
+    
     .messy-list ul li 
     {
         width: 33.33%;
         display: inline-block;
     }
+
     .messy-list ul li:nth-child(2)
     {
         top: -35px;
