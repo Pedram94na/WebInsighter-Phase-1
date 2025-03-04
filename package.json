@@ -12,6 +12,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "dotenv": "^16.4.7",
+    "emailjs": "^4.0.3",
     "formik": "^2.4.6",
     "jest": "^27.5.1",
     "nodemailer": "^6.10.0",
