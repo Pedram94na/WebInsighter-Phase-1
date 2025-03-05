@@ -15,15 +15,19 @@
 }
 
 .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 5px;
-    row-gap: 10px;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
+
+.portfolio-grid img {
+    width: 80%;
+    display: block;
+}
+
 
 .portfolio-arrow {
     width: 50px;
@@ -60,8 +64,27 @@
 
 .portfolio-grid.fade-out {
     opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .portfolio-grid.fade-in {
     opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 500px) {
+    .portfolio_place-holder {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portfolio-grid img {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
 }

@@ -1,12 +1,39 @@
+.about-us_content__div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.about-us_content__div > img {
+    width: 25%;
+    padding-right: 50px;
+}
+
 .about-us_content__text
 {
     padding: 0 80px;
     font-size: 25px;
 }
 
-@media screen and (max-width: 899px)
+@media screen and (max-width: 500px)
 {
+    .about-us_content__div {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        gap: 3px;
+    }
+
     .about-us_content__text {
-        font-size: 20px;
+        padding: 0 20px;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .about-us_content__div > img {
+        width: 50%;
+        height: 50%;
+        padding-right: 10px;
+        align-self: center;
     }
 }

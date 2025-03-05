@@ -4,11 +4,13 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { TextField, Button, Grid, Box } from '@mui/material';
 import validationSchema from './Validation_yup';
 import HandleSubmit from './HandleSubmit';
+import { Part } from '../../Components'
 
 const ContactUs = () => {
-  const formRef = useRef(); // Ref for the form
+  const formRef = useRef();
 
   return (
+    <Part id='contact-us-part' title="Contact Us" color="#0090FF">
     <Formik
       initialValues={{
         firstName: '',
@@ -23,7 +25,7 @@ const ContactUs = () => {
       onSubmit={(values, actions) => HandleSubmit(values, actions)}
     >
       {({ isSubmitting }) => (
-        <Form id='contact-us-part' ref={formRef} className='contact-form_form'>
+        <Form ref={formRef} className='contact-form_form'>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6}>
               <Field as={TextField} fullWidth name="firstName" placeholder="First Name" helperText={<ErrorMessage name="firstName" />} />
@@ -56,6 +58,7 @@ const ContactUs = () => {
         </Form>
       )}
     </Formik>
+    </Part>
   );
 };
 

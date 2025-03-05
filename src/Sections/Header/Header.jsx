@@ -9,6 +9,15 @@ export default function Header() {
     let text = {header: 'Build. Grow. Scale. Your Digital Success Starts Here.',
                 body: 'Websites that convert. SEO that ranks. Marketing that drives results.'
     }
+
+    function scrollToSec(id, offset = 40) {
+      const element = document.getElementById(id);
+      if (element) {
+          const top = element.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+      }
+  }  
+  
   return (
     <header style={{backgroundImage: `url(${coverPhoto})`}}>
     <Navigation/>
@@ -24,13 +33,13 @@ export default function Header() {
               {text.body}
             </p>
             <Button
-            onClick={mailtoFunction}
+            onClick={() => scrollToSec("contact-us-part")}
               style={{ borderRadius: '24px', padding: '12px 20px'}}
               className='header_button__back'
               variant='outlined'
               color='secondary'
             >
-              Let’s grow your business today!
+              Let's grow your business today!
               </Button>
             </div>
             </Box>

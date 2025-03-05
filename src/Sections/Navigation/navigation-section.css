@@ -19,4 +19,10 @@ nav div.top-logo
     {
         padding-left: 10px;
     }
+
+    .menu-icons svg.MuiSvgIcon-root {
+        fill: white;
+        padding-right: 30px;
+    } 
+  
 }

@@ -43,3 +43,38 @@
         font-size: 10px;
     }
 }
+
+@media screen and (max-width: 500px)
+{
+    .main-section {
+        padding-bottom: 0;
+    }
+
+    .section_description {
+        font-size: 10px;
+    }
+    
+    .section_description
+    {
+        margin-left: 80px;
+        font-size: 10px;
+    }
+
+    .section_title
+    {
+        padding-bottom: 5px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .section_title, .separator
+    {
+        margin: 0 75px;
+    }
+
+    .separator {
+        align-self: center;
+        margin: 0 auto;
+        width: 20%;
+    }
+}

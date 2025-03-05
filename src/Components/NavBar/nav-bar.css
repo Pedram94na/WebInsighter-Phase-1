@@ -18,14 +18,12 @@
 
 .mobile_menu
 {
-    background-color: var(--main-extra-light_1);
-    opacity: .66;
+    background-color: rgba(28, 34, 42, 0.9);
     position: fixed;
     top: 0;
     width: 50%;
-    height: 80%;
-    backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     transition: .2s, smooth;
     -webkit-transition: .2s, smooth;
     -moz-transition: .2s, smooth;
@@ -47,6 +45,7 @@
 {
     display:block;
     color: var(--main-dark_1);
+    color: white;
 }
 
 .mobile_menu__inner
