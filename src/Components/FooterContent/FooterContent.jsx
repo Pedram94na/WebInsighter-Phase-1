@@ -26,11 +26,11 @@ export default function FooterContent() {
                                     <LinkedIn />
                                 </a>
                             </li>
-                            <li>
+                            {/* <li>
                                 <a href='http://facebook.com'>
                                     <FacebookRounded />
                                 </a>
-                            </li>
+                            </li> */}
                         </ul>
                     </Box>
                 </Grid>
