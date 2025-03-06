@@ -1,6 +1,7 @@
 import React from 'react'
 import { Part } from '../../Components'
 import './about-us.css'
+import { team } from './team'
 
 export default function AboutUs() {
 
@@ -12,14 +13,13 @@ export default function AboutUs() {
     backimage={{show:true, top:[25,27], left:[45,60]}}
     >
         <div className='about-us_content__div'>
-        <p className='about-us_content__text'>
-            At WebInsighter, we help businesses grow by building powerful websites, SEO strategies, and digital marketing campaigns. A strong online presence is essential, and we ensure your brand stands out with fast, responsive, and SEO-optimized websites that attract and convert visitors.<br /><br />
-        
-            Our expertise goes beyond web design. We create data-driven SEO, branding, UX/UI design, and PPC advertising strategies tailored to your goals. Whether it's improving search rankings, increasing traffic, or launching high-impact marketing campaigns, we focus on delivering measurable success.<br /><br />
-            
-            As the Co-Founder and Head of Sales at WebInsighter, I work closely with businesses to understand their needs and create solutions that drive growth. With a strong background in SEO, digital marketing, and business strategy, I help clients navigate the digital world and achieve real results. Let’s connect and build something great together.
-            </p>
-        <img src="/team/ayrat.jpg" alt="Ayrat" />
+          <p className='about-us_content__text'>
+          At <strong style={{ color: '#C52F91' }}>WebInsighter</strong>, Digital Growth is a strategy, not just a service. We specialize in Web Design, SEO, and Digital Marketing, creating websites that are <strong style={{ color: '#C52F91' }}>fast, visually engaging, and optimized for results</strong>. From <strong style={{ color: '#C52F91' }}>high-performance websites</strong> to <strong style={{ color: '#C52F91' }}>conversion-driven marketing campaigns</strong>, we help businesses build a strong online presence and stand out in a competitive market.
+          </p>
+
+          <div className='team'>
+              {team()}
+          </div>
         </div>
     </Part>
   )

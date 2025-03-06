@@ -1,7 +1,7 @@
 .portfolio_place-holder {
     width: 100%;
     background-color: var(--light-grey);
-    /* display: flex; */
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -27,7 +27,6 @@
     width: 80%;
     display: block;
 }
-
 
 .portfolio-arrow {
     width: 50px;
@@ -72,18 +71,66 @@
     transition: opacity 0.5s ease-in-out;
 }
 
-@media screen and (max-width: 500px) {
+.portfolio-dots {
+    background-color: var(--light-grey);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: lightgray;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.dot.active {
+    background-color: #1c222a;
+    transform: scale(1.2);
+}
+  
+@media screen and (max-width: 991px) {
     .portfolio_place-holder {
         width: 100%;
         padding: 0;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
     }
 
     .portfolio-grid img {
-        width: 80%;
+        width: 110%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .portfolio-arrow {
+        width: 20px;
+        height: 20px;
+        margin: 0 20px;
+    }
+
+    .dot {
+        width: 5px;
+        height: 5px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .portfolio-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .portfolio-grid img {
+        width: 90%;
         margin: 0 auto;
         display: block;
     }

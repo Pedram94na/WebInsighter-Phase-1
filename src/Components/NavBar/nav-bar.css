@@ -3,7 +3,8 @@
 {
     list-style-type: none;
     margin: 0;
-    padding: 0px;
+    padding: 0;
+    text-align: left;
 }
 
 .nav-bar_ul li
@@ -22,8 +23,9 @@
     position: fixed;
     top: 0;
     width: 50%;
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+    max-width: 50%;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
     transition: .2s, smooth;
     -webkit-transition: .2s, smooth;
     -moz-transition: .2s, smooth;
@@ -60,4 +62,11 @@
     right: 5px;
     top:5px;
     color:var(--main-extra-light_1)
+}
+
+@media screen and (max-width: 1224px) {
+    .nav-bar_ul li
+    {
+        font-size: 15px;
+    }
 }

@@ -5,6 +5,7 @@
 }
 
 .services p {
+    width: 100%;
     padding: 0 80px;
     font-size: 25px;
 }
@@ -29,8 +30,7 @@
     position: relative;
     font-weight: bold;
     font-size: 20px;
-    padding: 20px 0;
-    margin: 20px 0;
+    margin: 40px 0;
 }
 
 .messy-list ul li:hover
@@ -40,11 +40,10 @@
     cursor: default;
 }
 
-/* deorganizing the list*/
-
-@media screen and (min-width: 800px)
+@media screen and (min-width: 992px)
 {
-    
+    /* deorganizing the list*/
+
     .messy-list ul li 
     {
         width: 33.33%;
@@ -61,19 +60,19 @@
         top: -35px;
         left: -20%;
     }
-    
+
     .messy-list ul li:nth-child(3)
     {
-    
+
         left: -37%;
     }
-    
+
     .messy-list ul li:nth-child(4)
     {
         top: 15px;
         left: 10%;
     }
-    
+
     .messy-list ul li:nth-child(5)
     {
         top: -8px;
@@ -83,46 +82,119 @@
         top: -100px;
         left: -10%;
     }
-    
+
     .messy-list ul li:nth-child(7) {
         top: -70px;
         left: 20%;
     }
+
+    @keyframes messyMove {
+        0% {
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes floatAround1 {
+        0% { transform: translate(0, 0); }
+        25% { transform: translate(12px, 5px); }
+        50% { transform: translate(-2px, 6px); }
+        75% { transform: translate(-7px, -2px); }
+        100% { transform: translate(0, 0); }
+    }
+
+    @keyframes floatAround2 {
+        0% { transform: translate(0, 0); }
+        25% { transform: translate(15px, -5px); }
+        50% { transform: translate(-5px, 8px); }
+        75% { transform: translate(2px, 1px); }
+        100% { transform: translate(0, 0); }
+    }
+
+    @keyframes floatAround3 {
+        0% { transform: translate(0, 0); }
+        25% { transform: translate(15px, -15px); }
+        50% { transform: translate(-5px, 2px); }
+        75% { transform: translate(1px, 4px); }
+        100% { transform: translate(0, 0); }
+    }
+
+    .messy-list ul li {
+        position: relative;
+        animation: messyMove 0.8s ease-out forwards;
+        opacity: 0;
+    }
+
+    .messy-list ul li:nth-child(1),
+    .messy-list ul li:nth-child(2),
+    .messy-list ul li:nth-child(3)
+    {
+        animation: messyMove 0.8s ease-out forwards, floatAround1 20s infinite ease-in-out;
+        animation-delay: 0.1s, 0.3s;
+    }
+
+    .messy-list ul li:nth-child(4),
+    .messy-list ul li:nth-child(5)
+    {
+        animation: messyMove 0.8s ease-out forwards, floatAround2 35s infinite ease-in-out;
+        animation-delay: 0.2s, 0.6s;
+    }
+    
+    .messy-list ul li:nth-child(6),
+    .messy-list ul li:nth-child(7),
+    .messy-list ul li:nth-child(8)
+    {
+        animation: messyMove 0.8s ease-out forwards, floatAround3 40s infinite ease-in-out;
+        animation-delay: 0.3s, 0.9s;
+    }
 }
 
-@media screen and (max-width: 500px)
+@media screen and (max-width: 991px)
 {
     .services
     {
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
+        padding-bottom: 0;
     }
 
     .services p {
         padding: 0 20px;
         width: 100%;
-        font-size: 12px;
+        font-size: 20px;
     }
 
-    .messy-list
-    {
+    .messy-list ul {
         width: 100%;
-        
-        text-align: center;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3px;
+        text-align: center; 
     }
+}
 
-    .messy-list ul{
-        margin: 60px auto 0 auto;
-        padding: 0;
-        margin: 10px;
-    }
-
-    .messy-list li
-    {
-        list-style-type: none;
-        font-weight: bold;
+@media screen and (max-width: 767px)
+{
+    .services p {
+        padding: 0 20px;
+        width: 100%;
         font-size: 15px;
-        padding: 5px 0;
-        margin: 5px 0;
+    }
+
+    .messy-list ul {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px; 
+    }
+
+    .messy-list ul li {
+        margin: 0;
     }
 }

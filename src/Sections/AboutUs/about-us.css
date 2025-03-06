@@ -1,25 +1,68 @@
 .about-us_content__div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px;
 }
 
-.about-us_content__div > img {
-    width: 25%;
-    padding-right: 50px;
-}
-
-.about-us_content__text
-{
+.about-us_content__text {
     padding: 0 80px;
     font-size: 25px;
 }
 
-@media screen and (max-width: 500px)
-{
+.about-us_content__div .team-details {
+    display: flex;
+    flex-direction: row;
+    padding: 0 80px;
+    font-size: 25px;
+    margin: 30px 0;
+    align-items: center;
+}
+
+.about-us_content__div .team-details.inverse {
+    flex-direction: row-reverse;
+}
+
+.about-us_content__div .team-details img {
+    max-width: 35%;
+    height: auto;
+    padding: 0 20px;
+    align-self: center;
+}
+
+@media screen and (max-width: 991px) {
     .about-us_content__div {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        height: auto;
+        gap: 3px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .about-us_content__text {
+        margin-left: 80px;
+        margin-right: 80px;
+        width: 100%;
+        font-size: 20px;
+        align-self: center;
+    }
+
+    .about-us_content__div img {
+        max-width: 50%;
+        height: auto;
+        padding-right: 10px;
+        align-self: center;
+    }
+
+    .about-us_content__div .team-details p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about-us_content__div {
+        display: flex;
+        flex-direction: column;
         height: auto;
         gap: 3px;
     }
@@ -27,13 +70,22 @@
     .about-us_content__text {
         padding: 0 20px;
         width: 100%;
-        font-size: 12px;
+        font-size: 20px;
     }
 
-    .about-us_content__div > img {
-        width: 50%;
-        height: 50%;
+    .about-us_content__div .team-details, .about-us_content__div .team-details.inverse {
+        flex-direction: column-reverse;
+        gap: 3px;
+    }
+
+    .about-us_content__div .team-details img {
+        max-width: 100%;
+        height: auto;
         padding-right: 10px;
         align-self: center;
+    }
+
+    .about-us_content__div .team-details p {
+        font-size: 15px;
     }
 }

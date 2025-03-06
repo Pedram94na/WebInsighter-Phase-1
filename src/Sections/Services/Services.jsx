@@ -14,29 +14,20 @@ export default function Services() {
         </p>
         <div id='services' className="messy-list">
           <ul>
-          <li>
-              Responsive Web design
-            </li>
-            <li>
-              Digital marketing and more
-            </li>
-            <li>
-              Search Engine Optimization
-            </li>
-            <li>
-              Graphic design and visual branding
-            </li>
-            <li>
-              Social media management
-            </li>
-            <li>
-              Mobile application development
-            </li>
-            <li>
-              Artificial intelligence development
-            </li>
+            <li>Brand Identity</li>
+            <li>Graphic Design</li>
+            <li>Web Design</li>
+            <li>Web Development</li>
+            <li>App Development</li>
+            <li>Social Media Marketing</li>
+            <li>Search Engine Optimization</li>
+            <li>Automation Systems</li>
           </ul>
         </div>
       </Part>
   )
 }
+
+
+
+

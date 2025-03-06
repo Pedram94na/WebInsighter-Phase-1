@@ -1,6 +1,6 @@
 import emailjs from '@emailjs/browser';
 
-const HandleSubmit = (values, { setSubmitting, resetForm }) => {
+const HandleSubmit = (values, { setSubmitting, resetForm }, setShowOverlay) => {
   setSubmitting(true);
 
   emailjs
@@ -13,8 +13,11 @@ const HandleSubmit = (values, { setSubmitting, resetForm }) => {
     .then(
       () => {
         console.log('SUCCESS!');
-        alert('Message sent successfully!');
         resetForm();
+        setShowOverlay(true);
+        setTimeout(() => {
+          setShowOverlay(false);
+        }, 5000);
       },
       (error) => {
         console.log('FAILED...', error.text);

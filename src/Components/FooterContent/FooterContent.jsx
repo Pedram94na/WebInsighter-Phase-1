@@ -16,16 +16,17 @@ export default function FooterContent() {
                 <Grid item xs={4} sm={4}>
                     <Box>
                         <ul className='footer_social-media__ul'>
-                            <li>
-                                <a href='https://www.instagram.com/web_insighter?igsh=MTUxdGR1b3EzMjloYg%3D%3D&utm_source=qr'>
-                                    <Instagram />
-                                </a>
-                            </li>
-                            <li>
-                                <a href='https://www.linkedin.com/company/webinsighter/'>
-                                    <LinkedIn />
-                                </a>
-                            </li>
+                        <li>
+                            <a href="https://www.instagram.com/web_insighter?igsh=MTUxdGR1b3EzMjloYg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
+                                <Instagram />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/webinsighter/" target="_blank" rel="noopener noreferrer">
+                                <LinkedIn />
+                            </a>
+                        </li>
+
                             {/* <li>
                                 <a href='http://facebook.com'>
                                     <FacebookRounded />
