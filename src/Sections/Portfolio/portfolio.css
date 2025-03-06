@@ -20,7 +20,6 @@
     align-items: center;
     padding: 20px;
     opacity: 1;
-    transition: opacity 0.5s ease-in-out;
 }
 
 .portfolio-grid img {
@@ -63,12 +62,12 @@
 
 .portfolio-grid.fade-out {
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s;
 }
 
 .portfolio-grid.fade-in {
     opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s;
 }
 
 .portfolio-dots {
@@ -121,7 +120,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .portfolio-grid {
         display: flex;
         flex-direction: column;
