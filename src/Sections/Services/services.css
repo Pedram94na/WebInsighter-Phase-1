@@ -40,7 +40,7 @@
     cursor: default;
 }
 
-@media screen and (min-width: 992px)
+@media screen and (min-width: 481px)
 {
     /* deorganizing the list*/
 
@@ -153,41 +153,42 @@
     }
 }
 
-@media screen and (max-width: 991px)
+@media screen and (max-width: 768px)
 {
     .services
     {
+        text-align: center;
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         padding-bottom: 0;
     }
 
     .services p {
-        padding: 0 20px;
         width: 100%;
         font-size: 20px;
+        padding: 0;
     }
 
-    .messy-list ul {
-        width: 100%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 3px;
-        text-align: center; 
+    .messy-list ul li 
+    {
+        font-size: 15px;
     }
 }
 
-@media screen and (max-width: 767px)
+@media screen and (max-width: 480px)
 {
+    .services {
+        text-align: center;
+    }
+
     .services p {
-        padding: 0 20px;
+        padding: 5px 0;
         width: 100%;
         font-size: 15px;
     }
 
     .messy-list ul {
-        width: 50%;
+        width: 70%;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -196,5 +197,35 @@
 
     .messy-list ul li {
         margin: 0;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .messy-list ul li:nth-child(1),
+    .messy-list ul li:nth-child(3),
+    .messy-list ul li:nth-child(5),
+    .messy-list ul li:nth-child(7)
+    {
+        animation: floatAround1 30s infinite ease-in-out;
+    }
+
+    .messy-list ul li:nth-child(2),
+    .messy-list ul li:nth-child(4),
+    .messy-list ul li:nth-child(6),
+    .messy-list ul li:nth-child(8)
+    {
+        animation: floatAround2 30s infinite ease-in-out;
+    }
+
+    @keyframes floatAround1 {
+        0% { transform: translate(0, 0); }
+        50% { transform: translate(-15px, 0); }
+        100% { transform: translate(0, 0); }
+    }
+
+    @keyframes floatAround2 {
+        0% { transform: translate(0, 0); }
+        50% { transform: translate(15px, 0); }
+        100% { transform: translate(0, 0); }
     }
 }

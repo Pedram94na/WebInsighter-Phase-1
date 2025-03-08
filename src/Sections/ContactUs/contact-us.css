@@ -87,13 +87,13 @@ label {
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 768px) {
     .confirmation-overlay {
         width: 50%;
     }
 }
 
-@media screen and (max-width: 767px)
+@media screen and (max-width: 480px)
 {
     .contact-form_form {
         padding: 20px !important;

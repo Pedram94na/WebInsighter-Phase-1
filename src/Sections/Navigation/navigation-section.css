@@ -14,7 +14,7 @@ nav div.top-logo
     max-width: 90px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
     nav div.top-logo
     {
         padding: 10px 20px;

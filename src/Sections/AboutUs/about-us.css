@@ -12,10 +12,11 @@
 .about-us_content__div .team-details {
     display: flex;
     flex-direction: row;
-    padding: 0 30px;
+    padding: 0 50px;
     font-size: 25px;
-    margin: 30px 0;
+    margin: 20px auto;
     align-items: center;
+    width: 80%;
 }
 
 .about-us_content__div .team-details.inverse {
@@ -29,53 +30,39 @@
     align-self: center;
 }
 
-@media screen and (max-width: 991px) {
+.about-us_content__div .team-details > p{
+    width: 60%;
+}
+
+@media screen and (max-width: 768px) {
     .about-us_content__div {
         display: flex;
         flex-direction: column;
         height: auto;
-        gap: 3px;
-        width: 90%;
+        gap: 5px;
+        width: 100%;
         margin: auto;
+        text-align: center;
     }
-
+    
     .about-us_content__text {
         margin-left: 80px;
         margin-right: 80px;
         width: 100%;
         font-size: 20px;
         align-self: center;
-    }
 
-    .about-us_content__div img {
-        max-width: 50%;
-        height: auto;
-        padding-right: 10px;
-        align-self: center;
-    }
-
-    .about-us_content__div .team-details p {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .about-us_content__div {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        gap: 3px;
-    }
-
-    .about-us_content__text {
-        padding: 0 20px;
         width: 100%;
         font-size: 20px;
+        padding: 0;
     }
 
-    .about-us_content__div .team-details, .about-us_content__div .team-details.inverse {
-        flex-direction: column-reverse;
-        gap: 3px;
+    .about-us_content__div .team-details {
+        flex-direction: column;
+    }
+
+    .about-us_content__div .team-details.inverse {
+        flex-direction: column;
     }
 
     .about-us_content__div .team-details img {
@@ -86,6 +73,49 @@
     }
 
     .about-us_content__div .team-details p {
+        width: 100%;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-us_content__div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 5px;
+        text-align: center;
+    }
+
+    .about-us_content__text {
+        padding-top: 5px;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .about-us_content__div .team-details {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .about-us_content__div .team-details.inverse {
+        flex-direction: column;
+    }
+
+    .about-us_content__div .team-details img {
+        max-width: 100%;
+        height: auto;
+        padding-right: 10px;
+        align-self: center;
+    }
+
+    .about-us_content__div .team-details p {
+        width: 100%;
         font-size: 15px;
     }
 }

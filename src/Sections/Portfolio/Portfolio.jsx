@@ -17,7 +17,7 @@ export default function Portfolio() {
     allPortfolios
   } = usePortfolioInterval();
 
-  const isMobile = width <= 766;
+  const isMobile = width < 480;
 
   return (
     <Part id="portfolio-part" title="Portfolio" data="" color="#2FC5A6">

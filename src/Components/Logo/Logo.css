@@ -1,7 +1,14 @@
-@media screen and (max-width: 767)
+@media screen and (max-width: 768px)
 {
   img {
-    width: 50%;
+    width: 100%;
     padding-left: 5px;
+  }
+}
+
+@media screen and (max-width: 480px)
+{
+  img {
+    width: 70%;
   }
 }
