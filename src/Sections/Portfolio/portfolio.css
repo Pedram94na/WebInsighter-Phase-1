@@ -24,7 +24,13 @@
 
 .portfolio-grid img {
     width: 80%;
-    display: block;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.portfolio-grid img.active {
+    opacity: 1;
 }
 
 .portfolio-arrow {
@@ -135,5 +141,6 @@
         width: 100%;
         margin: 0 auto;
         display: block;
+        opacity: 1;
     }
 }

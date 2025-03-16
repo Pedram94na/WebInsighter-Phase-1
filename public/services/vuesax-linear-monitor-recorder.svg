@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74">
+  <g id="vuesax_linear_monitor-recorder" data-name="vuesax/linear/monitor-recorder" transform="translate(-489 -263.379)">
+    <g id="monitor-recorder" transform="translate(506.255 297.675)">
+      <path id="Vector" d="M38.4,3.729V20.7c0,6.835-1.709,8.525-8.525,8.525H8.525C1.709,29.222,0,27.514,0,20.7V8.525C0,1.709,1.709,0,8.525,0h10.74" transform="translate(0 -11.696)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Vector-2" data-name="Vector" d="M0,0V9.178" transform="translate(19.2 17.527)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Vector-3" data-name="Vector" d="M0,0H38.4" transform="translate(0 9.424)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Vector-4" data-name="Vector" d="M0,0H17.28" transform="translate(10.56 26.704)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Vector-5" data-name="Vector" d="M2.488,0A5.79,5.79,0,0,0,.239,1.914a1.335,1.335,0,0,0,0,1.526A5.79,5.79,0,0,0,2.488,5.353" transform="translate(8.146 -0.736)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Vector-6" data-name="Vector" d="M0,0A5.79,5.79,0,0,1,2.248,1.914a1.335,1.335,0,0,1,0,1.526A5.79,5.79,0,0,1,0,5.353" transform="translate(27.764 -0.736)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <g id="vuesax_linear_brush" data-name="vuesax/linear/brush" transform="translate(20.29 -21.296)">
+        <g id="brush">
+          <path id="Vector-7" data-name="Vector" d="M12.575,1.562a27.291,27.291,0,0,1-6.983,9.427L4,12.267a2.9,2.9,0,0,1-.631.364,3.017,3.017,0,0,0-.032-.461A3.169,3.169,0,0,0,2.4,10.317a3.3,3.3,0,0,0-1.91-.963A3.243,3.243,0,0,0,0,9.346a2.115,2.115,0,0,1,.4-.68L1.659,7.072A27.212,27.212,0,0,1,11.086.081a1.132,1.132,0,0,1,1.23.251A1.1,1.1,0,0,1,12.575,1.562Z" transform="translate(4.853 1.626)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path id="Vector-8" data-name="Vector" d="M6.833,3.289a3.374,3.374,0,0,1-.979,2.387,3.363,3.363,0,0,1-1.966.939L1.9,6.833a1.711,1.711,0,0,1-1.885-1.9L.231,2.941A3.3,3.3,0,0,1,3.475,0a4.819,4.819,0,0,1,.486.008,3.257,3.257,0,0,1,1.91.963,3.169,3.169,0,0,1,.939,1.853C6.817,2.981,6.833,3.135,6.833,3.289Z" transform="translate(1.606 10.749)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path id="Vector-9" data-name="Vector" d="M3.827,3.827A3.83,3.83,0,0,0,0,0" transform="translate(7.587 7.77)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path id="Vector-10" data-name="Vector" d="M0,0H19.2V19.2H0Z" fill="none" opacity="0"/>
+        </g>
+      </g>
+    </g>
+    <g id="emoji-happy" transform="translate(484 258.379)">
+      <path id="Vector-11" data-name="Vector" d="M24.5,70h21C63,70,70,63,70,45.5v-21C70,7,63,0,45.5,0h-21C7,0,0,7,0,24.5v21C0,63,7,70,24.5,70Z" transform="translate(7 7)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    </g>
+  </g>
+</svg>

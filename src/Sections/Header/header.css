@@ -28,19 +28,20 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(-90deg, #C52F91, #F58634, #2FC5A6);
+    background-image: linear-gradient(-90deg, #340e26, #340e26, #340e26);
     transition: transform 0.4s ease-in-out;
     z-index: -1;
 }
 
 .header_button__back::after {
-    background-image: linear-gradient(-80deg, #C52F91, #F58634, #2FC5A6);
-    transform: scaleX(1);
+    background-image: linear-gradient(-90deg, #340e26, #340e26, #340e26);
+    transform: scaleX(2);
     transform-origin: right;
 }
 
 .header_button__back:hover::after {
-    transform: scaleX(1.5);
+    background-image: linear-gradient(-90deg, #C52F91, #F58634, #2FC5A6);
+    /* transform: scaleX(2); */
     transform-origin: right;
 }
 

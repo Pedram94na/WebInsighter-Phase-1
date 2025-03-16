@@ -10,7 +10,7 @@ export default function Portfolio() {
   const {
     currentImage,
     currentIndex,
-    fade,
+    isFading,
     goToNextImage,
     goToPreviousImage,
     generateDots,
@@ -31,8 +31,8 @@ export default function Portfolio() {
           alt="Previous"
         />
         <div className="portfolio-list">
-          <div className={`portfolio-grid ${fade ? 'fade-out' : 'fade-in'}`}>
-            <img src={currentImage} alt="Portfolio" />
+          <div className={`portfolio-grid`}>
+            <img src={currentImage} alt="Portfolio" className={isFading ? '' : 'active'}/>
           </div>
         </div>
         <img
@@ -51,7 +51,7 @@ export default function Portfolio() {
         <>
           <div className="portfolio_place-holder">
               <div className="portfolio-list">
-              <div className={`portfolio-grid`} onClick={popImage}>
+              <div className="portfolio-grid" onClick={popImage}>
                 {allPortfolios}
               </div>
             </div>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74">
+  <g id="vuesax_linear_pen-tool-2" data-name="vuesax/linear/pen-tool-2" transform="translate(-102.98 2.263)">
+    <g id="pen-tool-2" transform="translate(116.007 10.737)">
+      <g id="Group" transform="translate(15.34 19.073)">
+        <g id="Group-2" data-name="Group" transform="translate(0)">
+          <path id="Vector" d="M2.617,6.059H7.232C8.99,6.059,10.125,4.818,9.8,3.3L9.045,0H.8L.053,3.3A2.4,2.4,0,0,0,2.617,6.059Z" transform="translate(3.793 22.867)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path id="Vector-2" data-name="Vector" d="M12.838,22.849l3.168-4.166c1.776-2.326,1.85-3.949.439-6.573L10.86,1.643c-1.172-2.191-3.095-2.191-4.267,0L1.008,12.111c-1.41,2.624-1.41,4.328.439,6.573l3.168,4.166" transform="translate(0 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path id="Vector-3" data-name="Vector" d="M0,0V4.618" transform="translate(8.718 0.725)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group-3" data-name="Group" transform="translate(0 1.59)">
+        <path id="Vector-4" data-name="Vector" d="M4.33,6.494H2.165A2.171,2.171,0,0,1,0,4.33V2.165A2.171,2.171,0,0,1,2.165,0H4.33A2.171,2.171,0,0,1,6.494,2.165V4.33A2.171,2.171,0,0,1,4.33,6.494Z" transform="translate(20.726 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Vector-5" data-name="Vector" d="M2.165,6.495H4.33A2.171,2.171,0,0,0,6.494,4.33V2.165A2.171,2.171,0,0,0,4.33,0H2.165A2.171,2.171,0,0,0,0,2.165V4.33A2.171,2.171,0,0,0,2.165,6.495Z" transform="translate(3.162 19.851)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Vector-6" data-name="Vector" d="M4.33,6.495H2.165A2.171,2.171,0,0,1,0,4.33V2.165A2.171,2.171,0,0,1,2.165,0H4.33A2.171,2.171,0,0,1,6.494,2.165V4.33A2.171,2.171,0,0,1,4.33,6.495Z" transform="translate(38.205 19.851)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Vector-7" data-name="Vector" d="M14.36,0A16.487,16.487,0,0,0,0,16.474" transform="translate(6.366 3.377)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Vector-8" data-name="Vector" d="M14.275,16.474A16.5,16.5,0,0,0,0,0" transform="translate(27.22 3.377)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Vector-9" data-name="Vector" d="M13.945,0H0" transform="translate(27.508 3.377)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Vector-10" data-name="Vector" d="M4.33,6.495H2.165A2.171,2.171,0,0,1,0,4.33V2.165A2.171,2.171,0,0,1,2.165,0H4.33A2.171,2.171,0,0,1,6.494,2.165V4.33A2.171,2.171,0,0,1,4.33,6.495Z" transform="translate(41.452 0.13)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Vector-11" data-name="Vector" d="M13.945,0H0" transform="translate(20.437 3.377) rotate(180)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Vector-12" data-name="Vector" d="M4.33,6.495H2.165A2.171,2.171,0,0,1,0,4.33V2.165A2.171,2.171,0,0,1,2.165,0H4.33A2.171,2.171,0,0,1,6.494,2.165V4.33A2.171,2.171,0,0,1,4.33,6.495Z" transform="translate(6.494 6.624) rotate(180)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <path id="Vector-13" data-name="Vector" d="M0,0H43.451V43.307H0Z" transform="translate(2.314)" fill="none" opacity="0"/>
+    </g>
+    <g id="emoji-happy" transform="translate(97.98 -7.263)">
+      <path id="Vector-14" data-name="Vector" d="M24.5,70h21C63,70,70,63,70,45.5v-21C70,7,63,0,45.5,0h-21C7,0,0,7,0,24.5v21C0,63,7,70,24.5,70Z" transform="translate(7 7)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    </g>
+  </g>
+</svg>

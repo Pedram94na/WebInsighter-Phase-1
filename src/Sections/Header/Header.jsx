@@ -40,7 +40,7 @@ export default function Header() {
                                 variant='outlined'
                                 color='white'
                             >
-                                Let's grow your business today!
+                                Let's grow your business today
                             </Button>
                         </div>
                     </Box>
