@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Box } from '@mui/material';
+import { Grid } from '@mui/material';
 
 export default function NavigationStructure(props) {
   return (

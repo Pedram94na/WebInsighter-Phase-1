@@ -16,7 +16,7 @@ export const ServiceList = ({ key, service, isExpanded, onClick  }) => {
                 <img src={service.img_url} alt={service.title} />
                 <h2>{service.title}</h2>
             </div>
-            <p>{truncateText(service.description, 100)}</p>
+            <p style={{ maxWidth: '300px' }}>{truncateText(service.description, 100)}</p>
             <img src='/services/vuesax-linear-arrow-square-up.png' alt="Arrow" />
         </li>
     );

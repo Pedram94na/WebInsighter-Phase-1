@@ -1,13 +1,13 @@
 import { useState, useRef, useEffect } from 'react';
 
 export const portfolioImages = [
-  "/portfolio/1.png",
-  "/portfolio/2.png",
-  "/portfolio/3.png",
-  "/portfolio/4.png",
-  "/portfolio/5.png",
-  "/portfolio/6.png",
-  "/portfolio/7.png"
+  process.env.PUBLIC_URL + "/portfolio/1.webp",
+  process.env.PUBLIC_URL + "/portfolio/2.webp",
+  process.env.PUBLIC_URL + "/portfolio/3.webp",
+  process.env.PUBLIC_URL + "/portfolio/4.webp",
+  process.env.PUBLIC_URL + "/portfolio/5.webp",
+  process.env.PUBLIC_URL + "/portfolio/6.webp",
+  process.env.PUBLIC_URL + "/portfolio/7.webp"
 ];
 
 const usePortfolioInterval = (intervalDuration = 5000) => {

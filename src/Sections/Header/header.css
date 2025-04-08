@@ -66,7 +66,7 @@
 }
 
 .header.zoom-out {
-    background-size: 115%;
+    background-size: 110%;
     opacity: 1;
     transition: background-size 1s ease-out, opacity 1s ease-out;
 }
@@ -145,7 +145,7 @@
     .header.zoom-out {
         background-size: 150%;
         opacity: 1;
-        transition: background-size 1s ease-out, opacity 1s ease-out;
+        transition: background-size .7s ease-out, opacity 1s ease-out;
     }
 
     .header_text h2 {

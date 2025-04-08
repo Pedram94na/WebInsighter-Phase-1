@@ -7,7 +7,7 @@ export default function Part({id="", color, data="", className="", title, childr
   return (
     <div className='part'>
 
-      {backimage.show &&
+      {/* {backimage.show &&
       <img src='./backTriangle_1.png'
         style={{
           width:'calc(20% * var(--dinamic))',
@@ -22,7 +22,7 @@ export default function Part({id="", color, data="", className="", title, childr
           position:'absolute',
           top:` ${backimage.top[1]}%`,
           left:` ${backimage.left[1]}%`}}/>
-        }
+        } */}
 
       <section id={id} className={`main-section ${className}`} style={{backdropFilter: 'blur(20px)'}}>
         <h3 className='section_title'>{title}</h3>

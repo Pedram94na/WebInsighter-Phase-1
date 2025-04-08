@@ -14,7 +14,7 @@ export default function AboutUs() {
     >
         <div className='about-us_content__div'>
           <p className='about-us_content__text'>
-          At <strong style={{ color: '#C52F91' }}>WebInsighter</strong>, Digital Growth is a strategy, not just a service. We specialize in Web Design, SEO, and Digital Marketing, creating websites that are <strong style={{ color: '#C52F91' }}>fast, visually engaging, and optimized for results</strong>. From <strong style={{ color: '#C52F91' }}>high-performance websites</strong> to <strong style={{ color: '#C52F91' }}>conversion-driven marketing campaigns</strong>, we help businesses build a strong online presence and stand out in a competitive market.
+          At <strong style={{ color: '#A3C52F' }}>WebInsighter</strong>, Digital Growth is a strategy, not just a service. We specialize in Web Design, SEO, and Digital Marketing, creating websites that are <strong style={{ color: '#A3C52F' }}>fast, visually engaging, and optimized for results</strong>. From <strong style={{ color: '#A3C52F' }}>high-performance websites</strong> to <strong style={{ color: '#A3C52F' }}>conversion-driven marketing campaigns</strong>, we help businesses build a strong online presence and stand out in a competitive market.
           </p>
 
           <div className='team'>

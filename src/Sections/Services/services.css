@@ -257,12 +257,16 @@
     }
 
     .messy-list ul {
-        width: 50%;
+        width: 80%;
         height: auto;
         margin: auto;
         display: flex;
         flex-direction: column;
         gap: 15px; 
+    }
+
+    .messy-list h2 {
+        font-size: 20px;
     }
 
     .messy-list ul li {

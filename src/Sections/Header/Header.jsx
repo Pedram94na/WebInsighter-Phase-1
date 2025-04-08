@@ -4,7 +4,7 @@ import { Navigation } from '..';
 import { Button, Grid, Box } from '@mui/material';
 
 export default function Header() {
-    const coverPhoto = "/Home%20Wallpaper1.png";
+    const coverPhoto = `${process.env.PUBLIC_URL}/HomeWallpaper1.webp`;
     const text = {
         header: 'Build. Grow. Scale. Your Digital Success Starts Here.',
         body: 'Websites that convert. SEO that ranks. Marketing that drives results.'
